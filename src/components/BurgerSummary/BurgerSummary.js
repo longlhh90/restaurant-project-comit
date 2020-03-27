@@ -9,18 +9,19 @@ const BurgerSummary = (props) => {
         })
     return (
         <React.Fragment>
-            <h3>Your Burger</h3>
+            <h3 className={classes.Center}>Your Burger</h3>
             <div className={classes.Content}>
-                <p>This is a delicious burger with following order:</p>
+                <p>This is a delicious burger with following ingredients:</p>
                 <ul>
                     {ingredients}
                 </ul>
-                <p><strong>Total price: ${props.totalPrice.toFixed(2)}</strong></p>
             </div>
-            <p>Continue to Checkout?</p> 
-            <Button btnType = "Danger" onclicked={props.orderCancelled}>CANCEL</Button> 
-            <Button btnType = "Success" >CONTINUE</Button>
-
+            <div className={classes.Center}>
+                <p><strong>Total price: ${props.totalPrice.toFixed(2)}</strong></p>
+                <p className={classes.Center}>Continue to Checkout?</p>
+                <Button btnType="ButtonFormSmall" onclicked={props.orderCancelled}>Cancel</Button>
+                <Button btnType="ButtonFormSmall" >Continue</Button>
+            </div>
         </React.Fragment>
     );
 };

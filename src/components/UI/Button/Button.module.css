@@ -1,23 +1,106 @@
 .Button {
-    background-color: transparent;
-    border: 1px solid black;
-    color: white;
+    border: none;
     outline: none;
     cursor: pointer;
-    font: inherit;
-    padding: 10px;
+    padding: 10px 30px;
     margin: 10px;
     font-weight: bold;
+    transition: 0.3s;
+    letter-spacing: 0.1em;
 }
 
-/* .Button:first-of-type {
-    margin-left: 0;
-} */
-
-.Success {
-    color: #5C9210;
+.Button:focus {
+    outline:0 !important;
 }
 
-.Danger {
-    color: #944317;
+.ButtonMenu {
+    border: 2px solid #6e6e6e;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.ButtonMenuActive {
+    border: 2px solid #d40000;
+    background-color: #000000;
+    color: #d40000;
+}
+
+.ButtonForm {
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #d40000;
+}
+
+.ButtonForm:hover {
+    background-color: transparent;
+}
+
+.ButtonForm:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.ButtonFormSmall {
+    padding: 5px 10px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: smaller;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #d40000;
+}
+
+.ButtonFormSmall:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.ButtonFormSmall:active {
+    color: #d40000;
+}
+
+.ButtonQuantity {
+    padding: 5px 10px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: smaller;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #d40000;  
+}
+
+.ButtonQuantity:hover {
+    background-color: #ffffff;
+    color: #d40000;
+}
+
+.ButtonQuantity:active {
+    color: #d40000;
+}
+
+.ButtonQuantity:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.ButtonLong {
+    color: #fff;
+    font-size: large;
+    background-color: #28963C;
+    border-radius: 50px;
+    letter-spacing: 0.3em;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 10px 0px;
+}
+
+.ButtonLong:hover {
+    font-weight: 700;
+    color: #d40000;
+}
+
+.ButtonLong:active {
+    font-weight: 400;
+    color: #d40000;
 }

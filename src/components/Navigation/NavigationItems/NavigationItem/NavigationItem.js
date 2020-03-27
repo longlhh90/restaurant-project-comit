@@ -9,6 +9,7 @@ const NavigationItem = (props) => {
                     {props.children}
                 </a>
             </li>
+            {props.isLast || props.isSideDrw ? null : <li className={classes.Item} style={{color: "#d40000"}}>|</li>}
         </React.Fragment>
     );
 };

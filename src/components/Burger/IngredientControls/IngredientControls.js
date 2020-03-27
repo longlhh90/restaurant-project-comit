@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './IngredientControls.css';
 import IngredientControl from './IngredientControl/IngredientControl'
+import Button from '../../UI/Button/Button';
 
 
 const controls = [
@@ -26,10 +27,10 @@ const IngredientControls = (props) => {
                     />
                 )
             })}
-            <button
-                className={classes.OrderButton}
+            <Button
+                btnType="ButtonForm"
                 disabled={!props.purchasable}
-                onClick={props.orderClicked}>Checkout!</button>
+                onclicked={props.orderClicked}>CHECKOUT!</Button>
         </div>
     );
 };

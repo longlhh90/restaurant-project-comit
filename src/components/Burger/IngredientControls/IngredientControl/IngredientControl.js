@@ -1,17 +1,20 @@
 import React from 'react';
-import classes from './IngredientControl.css'
+import classes from './IngredientControl.css';
+import Button from '../../../UI/Button/Button';
 
 const IngredientControl = (props) => {
     return (
         <div className={classes.IngreCtrl}>
             <div className={classes.Label}>{props.label}</div>
-            <button 
-            className={classes.Less}
-            onClick = {props.reduced}
+            <Button
+            btnType="ButtonQuantity"
+            onclicked = {props.reduced}
             disabled = {props.isDisabled}
-            >-</button>
+            >-</Button>
             <p className={classes.Quantity}>{props.quantity}</p>
-            <button className={classes.More} onClick = {props.added}>+</button>
+            <Button 
+            btnType="ButtonQuantity"
+            onclicked = {props.added}>+</Button>
         </div>
     );
 };

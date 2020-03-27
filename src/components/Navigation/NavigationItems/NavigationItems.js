@@ -5,9 +5,9 @@ import NavigationItem from './NavigationItem/NavigationItem';
 const NavigationItems = (props) => {
     return (
         <ul className={classes.NavigationItems} style={{"border-top": props.style}}>
-            <NavigationItem link='/'>Menu</NavigationItem>
-            <NavigationItem  link='/'>Burgers</NavigationItem>
-            <NavigationItem link='/' active>Make Your Burger</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} link='/'>MENU</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} link='/' active>SELF-MADE BURGER</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} isLast link='/'>CONTACT</NavigationItem>
         </ul>
     );
 };

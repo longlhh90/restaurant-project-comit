@@ -2,6 +2,10 @@
     text-transform: capitalize;
 }
 
+.Center {
+    text-align: center;
+}
+
 .Content {
     text-align: left;
 }
