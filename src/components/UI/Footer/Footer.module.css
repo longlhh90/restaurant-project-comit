@@ -1,0 +1,22 @@
+.FooterItem {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: #666666;
+    font-size: small;
+}
+
+.FooterItem li {
+    display: block;
+}
+
+.FooterItem li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.Footer {
+    margin: 0;
+    width: 100%;
+    background-color: #121217;
+}

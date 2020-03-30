@@ -3,6 +3,7 @@ import Burger from '../../components/Burger/Burger';
 import IngredientControls from '../../components/Burger/IngredientControls/IngredientControls';
 import Modal from '../../components/UI/Modal/Modal';
 import BurgerSummary from '../../components/BurgerSummary/BurgerSummary';
+import HeaderBox from '../../components/UI/HeaderBox/HeaderBox';
 
 
 const INGREDIENT_PRICES = {
@@ -26,7 +27,7 @@ class BurgerBuilder extends Component {
     }
 
     updateOrderClicked = (isOrderClicked) => {
-        this.setState({orderClicked: isOrderClicked});
+        this.setState({ orderClicked: isOrderClicked });
     }
 
     updatePurchaseState = (ingredients) => {
@@ -75,12 +76,19 @@ class BurgerBuilder extends Component {
         }
         return (
             <React.Fragment>
-                <Modal show={this.state.orderClicked} 
-                bdClicked ={() => this.updateOrderClicked(false)}>
+                <Modal show={this.state.orderClicked}
+                    bdClicked={() => this.updateOrderClicked(false)}>
                     <BurgerSummary ingredients={this.state.ingredients}
                         totalPrice={this.state.totalPrice}
-                        orderCancelled = {() => this.updateOrderClicked(false)} />
+                        orderCancelled={() => this.updateOrderClicked(false)} />
                 </Modal>
+
+                {/* Header box */}
+                <HeaderBox link="self-made-burger"
+                    title="BURGER"
+                    caption="ENJOY YOUR OWN BURGER"
+                >
+                </HeaderBox>
 
                 <Burger ingredients={this.state.ingredients} />
                 <IngredientControls

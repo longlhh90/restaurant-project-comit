@@ -1,0 +1,67 @@
+.MenuItem {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.Image {
+    max-width: 20%;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.DescriptionContainer {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.TitleRowContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.Title {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.Price {
+    color: #d40000;
+    font-weight: 600;
+    font-size: larger;
+    max-width: 10%;
+}
+
+.Description {
+    padding-top: 0.3em;
+    font-family: 'Lora';
+    font-weight: lighter;
+    font-style: italic;
+    font-size: small;
+    color: #787878;
+    line-height: 1.5em;
+}
+
+.Spacer {
+    flex: 1 1 auto;
+    /* height: .8px; */
+    /* align-self: flex-end; */
+    border-bottom: dashed 1px #aaa;
+    background-size: cover;
+    display: table-cell;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.OrderControls {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}

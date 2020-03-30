@@ -1,0 +1,15 @@
+.MenuListing {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    /* background-color: #121217; */
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.SectionHeading {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: large;
+    margin-bottom: 20px;
+}

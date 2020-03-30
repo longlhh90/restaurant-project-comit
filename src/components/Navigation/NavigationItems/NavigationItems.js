@@ -4,10 +4,10 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 const NavigationItems = (props) => {
     return (
-        <ul className={classes.NavigationItems} style={{"border-top": props.style}}>
-            <NavigationItem isSideDrw={props.isSideDrw} link='/'>MENU</NavigationItem>
-            <NavigationItem isSideDrw={props.isSideDrw} link='/' active>SELF-MADE BURGER</NavigationItem>
-            <NavigationItem isSideDrw={props.isSideDrw} isLast link='/'>CONTACT</NavigationItem>
+        <ul className={classes.NavigationItems} style={{"borderTop": props.style}}>
+            <NavigationItem isSideDrw={props.isSideDrw} link='/' exact closedSD={props.closedSD}>MENU</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} link='/self-made-burger' closedSD={props.closedSD}>SELF-MADE BURGER</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} isLast link='/contact' closedSD={props.closedSD}>CONTACT</NavigationItem>
         </ul>
     );
 };

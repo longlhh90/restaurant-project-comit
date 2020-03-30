@@ -11,7 +11,7 @@ const SideDrawer = (props) => {
             <BackDrop show={props.open} bdClicked={props.closed} />
             <div className={sideDrawClasses.join(' ')}>
                 <Logo height="50px" />
-                <Nav isSideDrw style="1px solid white" />
+                <Nav closedSD={props.closed} isSideDrw style="1px solid white" />
             </div>
         </React.Fragment>
 
