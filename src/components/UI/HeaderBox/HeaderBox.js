@@ -1,7 +1,8 @@
 import React from 'react';
 import MenuImg from '../../../assets/images/menu.jpg';
-import ContactImg from '../../../assets/images/contact2.jpg';
-import BurgerBuilderImg from '../../../assets/images/contact.jpg';
+import ContactImg from '../../../assets/images/contact.jpg';
+import BurgerBuilderImg from '../../../assets/images/burgerbuilder.jpg';
+import BookingImg from '../../../assets/images/booking.jpg';
 import classes from './HeaderBox.module.css';
 
 const HeaderBox  = (props) => {
@@ -12,6 +13,8 @@ const HeaderBox  = (props) => {
         bgImg=ContactImg;
      } else if (props.link==="self-made-burger") {
         bgImg=BurgerBuilderImg;
+     } else if (props.link==="booking-online") {
+        bgImg=BookingImg;
      }
 
     const style = {

@@ -7,7 +7,8 @@ const NavigationItems = (props) => {
         <ul className={classes.NavigationItems} style={{"borderTop": props.style}}>
             <NavigationItem isSideDrw={props.isSideDrw} link='/' exact closedSD={props.closedSD}>MENU</NavigationItem>
             <NavigationItem isSideDrw={props.isSideDrw} link='/self-made-burger' closedSD={props.closedSD}>SELF-MADE BURGER</NavigationItem>
-            <NavigationItem isSideDrw={props.isSideDrw} isLast link='/contact' closedSD={props.closedSD}>CONTACT</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} link='/contact' closedSD={props.closedSD}>CONTACT</NavigationItem>
+            <NavigationItem isSideDrw={props.isSideDrw} isLast link='/booking-online' closedSD={props.closedSD}>BOOK NOW</NavigationItem>
         </ul>
     );
 };

@@ -19,7 +19,7 @@ const ContactItem = (props) => {
                 () => {
                     return (<Col md={4} key={contact} className={classes.Col}>
                         <FontAwesomeIcon className={classes.Icon} icon={props.listing[contact][0]} />
-                        <h3><span style={{ "text-transform": "text-transform" }}>{contact}</span></h3>
+                        <h3><span style={{ "text-transform": "capitalize" }}>{contact}</span></h3>
                         {props.listing[contact][1]}
                     </Col>)
                 }

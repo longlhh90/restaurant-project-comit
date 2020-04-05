@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
+import Booking from '../../components/Booking/Booking';
 import HeaderBox from '../../components/UI/HeaderBox/HeaderBox';
-import Contact from '../../components/Contact/Contact';
 
-class ContactContainer extends Component {
-
+class BookingContainer extends Component {
     render() {
         return (
             <React.Fragment>
                 {/* Header box */}
-                <HeaderBox link="contact"
-                    title="CONTACT US"
-                    caption="WHERE WE ARE"
+                <HeaderBox link="booking-online"
+                    title="BOOKING ONLINE"
+                    caption="MAKE A RESERVATION"
                 >
                 </HeaderBox>
 
-                <Contact /> 
-
+                <Booking /> 
 
             </React.Fragment>
         );
     }
-
 }
 
-
-export default (ContactContainer);
+export default BookingContainer;
