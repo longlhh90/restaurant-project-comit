@@ -101,8 +101,13 @@ fieldset > div {
     outline: none;
 }
 
+.Button {
+    width: 100%;
+    margin: 0 auto 0;
+    text-align: center;
+}
 
-.Form button {
+/* .Form button {
     font-size: 13px;
     font-weight: bold;
     background-color: #d40000;
@@ -122,4 +127,4 @@ fieldset > div {
 .Form button:hover {
     background: #191919;
     color: #fff;
-}
+} */
