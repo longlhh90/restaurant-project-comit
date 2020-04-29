@@ -1,0 +1,13 @@
+.Order {
+    width: 50rem;
+    margin: 2rem auto;
+    max-width: 80%;
+    /* text-align: center; */
+    color: #aaa
+  }
+
+  .Order td,
+  .Order th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }

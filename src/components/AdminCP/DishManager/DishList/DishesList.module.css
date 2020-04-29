@@ -1,0 +1,49 @@
+.IngredientList {
+  width: 35rem;
+  max-width: 80%;
+  margin: auto;
+  color: #aaa;
+}
+
+.IngredientList h2 {
+  border-bottom: 3px solid rgb(204, 3, 3);
+  padding-bottom: 0.5rem;
+}
+
+.IngredientList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.IngredientList li {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.56);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.Image {
+  max-width: 20%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.Button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Icon {
+  font-size: 15px;
+  margin: 15px;
+  color: #aaa;
+}
+
+.Icon :hover {
+  font-size: 15px;
+  margin: 15px;
+  color: #dd3333!important;
+}

@@ -128,16 +128,12 @@ const checkValidity = (value, rules) => {
 }
 
 const inputChangedHandler = (state, event, inputIdentifier) => {
-    const updatedBookingForm = {
-        ...state.bookingForm
-    };
-    const updatedFormElement = { 
-        ...updatedBookingForm[inputIdentifier]
-    };
-    updatedFormElement.value = event.target.value;
-    updatedFormElement.valid = checkValidity(updatedFormElement.value, updatedFormElement.validation);
-    updatedFormElement.touched = true;
-    updatedBookingForm[inputIdentifier] = updatedFormElement;
+    const updatedFormElement = updateObject(state.bookingForm[inputIdentifier], {
+        value: event.target.value,
+        valid: checkValidity(event.target.value, state.bookingForm[inputIdentifier].validation),
+        touched: true
+    })
+    const updatedBookingForm = updateObject(state.bookingForm, {[inputIdentifier]: updatedFormElement} );
     
     let formIsValid = true;
     for (let inputIdentifier in updatedBookingForm) {
@@ -154,7 +150,7 @@ const modifyInput = (state, action) => {
 
 const bookingFormReducer = (state= initialState, action) => {
     switch (action.type) {
-        case actionTypes.CHANGE_INPUT_VALUE: return modifyInput(state,action);
+        case actionTypes.CHANGE_INPUT_BOOKING_VALUE: return modifyInput(state,action);
         default: return state;
     }
 }

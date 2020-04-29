@@ -1,0 +1,37 @@
+.DishFormSection {
+  padding-top: 0px;
+  width: 30rem;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.DishForm {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #121217;
+}
+
+.FormControl label,
+.FormControl input {
+  display: block;
+  width: 100%;
+  color: #aaa;
+}
+
+.FormControl input {
+  font: inherit;
+  padding: 0.1rem 0.25rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.FormControl input:focus {
+  outline: none;
+  border-bottom-color: #dd3333;
+}
+
+.FormControlActions {
+  display: flex;
+  justify-content: flex-start;
+}

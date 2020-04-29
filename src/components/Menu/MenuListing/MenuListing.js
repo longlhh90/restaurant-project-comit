@@ -12,8 +12,18 @@ class MenuListing extends Component {
         let rows = [];
         let cols = [];
         let count = 1;
-        
-        this.props.dishes.forEach(dish => {
+        const dishes= [];
+        for (let key in this.props.dishes) {
+            dishes.push( {
+                dishId: key,
+                dish: this.props.dishes[key].dishName,
+                image: this.props.dishes[key].imgURL,
+                price: this.props.dishes[key].price, 
+                description: this.props.dishes[key].dishDesc,
+            })
+        }
+
+        dishes.forEach(dish => {
                 if (count%2===0) {
                     // add to cols
                     cols.push(dish);
@@ -25,7 +35,7 @@ class MenuListing extends Component {
                     cols.push(dish);
                 }
                 // for last elements
-                if (count === this.props.dishes.length && cols.length > 0) {
+                if (count === dishes.length && cols.length > 0) {
                     // fill cols to the limit
                     for (let i = cols.length; i< displayCols; i++) {
                         cols.push({});

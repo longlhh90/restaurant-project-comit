@@ -8,7 +8,7 @@ class BookingContainer extends Component {
             <React.Fragment>
                 {/* Header box */}
                 <HeaderBox link="booking-online"
-                    title="BOOKING ONLINE"
+                    title="BOOKING"
                     caption="MAKE A RESERVATION"
                 >
                 </HeaderBox>

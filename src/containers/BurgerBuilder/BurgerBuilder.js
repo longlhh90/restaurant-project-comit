@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Burger from '../../components/Burger/Burger';
 import IngredientControls from '../../components/Burger/IngredientControls/IngredientControls';
 import Modal from '../../components/UI/Modal/Modal';
-import BurgerSummary from '../../components/BurgerSummary/BurgerSummary';
+import BurgerSummary from '../../components/Burger/BurgerSummary/BurgerSummary';
 import HeaderBox from '../../components/UI/HeaderBox/HeaderBox';
 import * as burgerBuilderActions from '../../store/actions/index';
 

@@ -22,109 +22,74 @@
     font-weight: 300;
 }
 
-.Form input,
+.Form select {
+    border: 0px;
+    -webkit-appearance: none;
+    border-radius: 0px;
+}
+
+.Form input, 
 .Form select {
     width: 100%;
     max-width: 15em;
-
-    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
     margin-bottom: 20px;
     color: #fff;
-    border: solid 1px rgba(0, 0, 0, .3);
+    /* border: solid 1px rgba(0, 0, 0, .3); */
     background: rgba(0, 0, 0, .2);
-    border-radius: 5px !important;
+    /* border-radius: 5px !important; */
     height: 40px;
 }
- 
-fieldset > div {
+
+.Form input:focus, .Form select:focus {
+    outline: none;
+    border-bottom-color: #dd3333;
+}
+
+fieldset>div {
     width: 33.333%;
     float: left;
     padding: 0 15px;
 }
-
-
-
-
-
-
-
-
-#contact_form {
-    margin-top: 20px;
-}
-
-
-
-#contact_form input[placeholder], #contact_form textarea[placeholder] {
-    color: #eee;
-}
-
-#contact_form input[type=submit]:hover {
-    color: #fff !important;
-    background: #111;
-    border-color: #111;
-}
-
-
-.error_input {
-    border: solid 1px #D31E2B !important;
-}
-
-.page-template-template-thanks .rtb-booking-form {
-    display: none;
-}
-
-.rtb-booking-form {
-    background: #111;
-    padding: 60px;
-}
-
-.ptop30 .rtb-booking-form {
-    padding-top: 30px;
-}
-
 
 .Form fieldset {
     margin: 0 -15px;
     padding-bottom: 0;
 }
 
-.Form fieldset input, .Form fieldset select, .Form fieldset textarea {
-    width: 100%;
-    max-width: none;
-    background: #191919;
-    color: #ddd;
-    border: none;
-    box-shadow: none;
-    border-bottom: solid 1px #333;
-    padding: 10px;
-    outline: none;
-}
-
-.Button {
+.ButtonArea {
     width: 100%;
     margin: 0 auto 0;
     text-align: center;
 }
 
-/* .Form button {
-    font-size: 13px;
-    font-weight: bold;
-    background-color: #d40000;
-    color: #fff;
-    line-height: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    padding: 11px 31px 11px 31px;
-    transition: .3s;
-    display: block;
-    margin: 30px auto 0;
+@media (max-width: 499px) {
+    .Form {
+        width: 100%;
+        height: 100%;
+    }
+    .Form input, .Form select, .Form label {
+        display: block;
+        width: 100%;
+        max-width: none;
+        color: #aaa;
+    }
+    fieldset>div {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+    }
 }
 
-.Form button:hover {
-    background: #191919;
-    color: #fff;
-} */
+@-webkit-keyframes autofill {
+    to {
+      color: white;
+      background: rgba(0, 0, 0, .2);
+    }
+  }
+  
+    input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }

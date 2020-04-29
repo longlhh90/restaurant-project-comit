@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import * as bookingFormActions from '../../../store/actions/index';
+import * as FormActions from '../../../store/actions/index';
 import Button from '../../UI/Button/Button';
 import Input from '../../UI/Input/Input';
 import classes from './BookingForm.module.css';
@@ -31,8 +31,8 @@ const BookingForm = () => {
 
     let form = (
         <form >
-            {formElementsArray.map(formElement => (
-                <fieldset>
+            {formElementsArray.map((formElement,i) => (
+                <fieldset key={i}>
                     {formElement.map(e => (
                         <Input
                             key={e.id}
@@ -43,12 +43,12 @@ const BookingForm = () => {
                             invalid={!e.config.valid}
                             shouldValidate={e.config.validation}
                             touched={e.config.touched}
-                            changed={(event) => dispatch(bookingFormActions.modifyInput(event, e.id))} />
+                            changed={(event) => dispatch(FormActions.modifyInputBooking(event, e.id))} />
                     ))}
                 </fieldset>
 
             ))}
-            <div className={classes.Button}>
+            <div className={classes.ButtonArea}>
             <Button btnType="ButtonForm" disabled={!bookingFormState.formIsValid}>REQUEST BOOKING</Button>
             </div>
             
@@ -63,52 +63,3 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
-
-
-
-
-
-{/* <div className={classes.Form}>
-<form>
-    <fieldset>
-        <div>
-            <label>Date</label>
-            <input type="date" value='' />
-        </div>
-
-        <div>
-            <label>Time</label>
-            <input type="time" name="" id="rtb-date" value="" />
-        </div>
-
-        <div>
-            <label>Party</label>
-            <select required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-        </div>
-    </fieldset>
-    <fieldset>
-        <div>
-            <label>Name</label>
-            <input type="text" />
-        </div>
-
-        <div>
-            <label>Email</label>
-            <input type="email" />
-        </div>
-
-        <div>
-            <label>Phone</label>
-            <input type="tel" />
-        </div>
-    </fieldset>
-    <button type="submit">Request Booking</button>
-</form>
-</div> */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './BurgerSummary.module.css';
-import Button from '../UI/Button/Button';
+import Button from '../../UI/Button/Button';
 
 const BurgerSummary = (props) => {
     const ingredients = Object.keys(props.ingredients)

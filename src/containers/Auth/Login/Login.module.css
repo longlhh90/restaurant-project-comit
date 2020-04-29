@@ -1,0 +1,20 @@
+.Auth {
+  width: 30rem;
+  margin: 2rem auto;
+  max-width: 80%;
+  text-align: center;
+  color: #aaa
+}
+
+.Card {
+  /* padding: 1rem;
+  
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.26); */
+  border: red 1px solid;
+  border-radius: 5px;
+  background-color: #121217;
+  padding: 10px;
+  width: 30rem;
+  margin: 150px 50px auto;
+  max-width: 80%;
+}

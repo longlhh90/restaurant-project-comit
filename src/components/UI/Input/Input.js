@@ -1,14 +1,13 @@
 import React from 'react';
-
-// import classes from './Input.module.css';
+import classes from './Input.module.css';
 
 const Input = (props) => {
     let inputElement = null;
-    // const inputClasses = [classes.InputElement];
+    const inputClasses = [classes.InputElement];
 
-    // if (props.invalid && props.shouldValidate && props.touched) {
-    //     inputClasses.push(classes.Invalid);
-    // }
+    if (props.invalid && props.shouldValidate && props.touched) {
+        inputClasses.push(classes.Invalid);
+    }
 
     switch (props.elementType) {
         case ('input'):
@@ -17,7 +16,8 @@ const Input = (props) => {
                     <label>{props.label}</label>
                     <input {...props.elementConfig}
                         value={props.value}
-                        onChange={props.changed} />
+                        onChange={props.changed}
+                        className={inputClasses.join(' ')} />
                 </div>
             );
             break;
@@ -43,7 +43,8 @@ const Input = (props) => {
                     <label>{props.label}</label>
                     <input {...props.elementConfig}
                         value={props.value}
-                        onChange={props.changed} />
+                        onChange={props.changed}
+                        className={inputClasses.join(' ')} />
                 </div>
             );
             break;

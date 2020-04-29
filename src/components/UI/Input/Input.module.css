@@ -1,4 +1,16 @@
 .Invalid {
-    border: 1px solid red;
-    background-color: #FDA49A;
+    border: 1px solid #D31E2B !important;
+    
+}
+
+.InputElement {
+    width: 100%;
+    max-width: none;
+    background: #191919;
+    color: #ddd;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid 1px #333;
+    padding: 10px;
+    outline: none;
 }

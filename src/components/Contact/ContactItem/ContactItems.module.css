@@ -11,3 +11,7 @@
 .Col {
     text-align: center;
 }
+
+.Col h3 span {
+    text-transform: capitalize;
+}

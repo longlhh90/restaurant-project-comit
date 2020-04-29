@@ -5,15 +5,15 @@ import classes from './MenuControls.module.css';
 class MenuControls extends Component {
 
     render() {
-        const controls = Object.keys(this.props.categories).map(ckey => {
+        const controls = this.props.categories.map(cat => {
             return (
-                <Button key={ckey}
-                    btnType={this.props.activeCategory === ckey ?
-                        this.props.categories[ckey].activeBtnType
-                        : this.props.categories[ckey].btnType}
-                    onclicked={() => this.props.categorySelected(ckey)}
+                <Button key={cat}
+                    btnType={this.props.activeCategory === cat ?
+                        this.props.activeBtnType
+                        : this.props.btnType}
+                    onclicked={() => this.props.categorySelected(cat)}
                 >
-                    {this.props.categories[ckey].label}
+                    {cat}
                 </Button>
             );
         });
