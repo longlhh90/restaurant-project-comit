@@ -27,7 +27,9 @@ const Footer = (props) => {
 
                 </Col>
                 <Col md={4} >
-                    <div className={classes.FooterItem}>© 2020 – All Rights Reserved to a Restaurant| Powered by <strong>longlhh90@gmail.com </strong></div>
+                    <div className={classes.FooterItem}>© 2020 – By <a href="mailto:longlhh90@gmail.com"><strong>longlhh90@gmail.com </strong></a></div>
+                    <div className={classes.FooterItem}>Theme idea is from <strong>Delizus</strong></div>
+                    <div className={classes.FooterItem}>Burger Builder is from the guide of <strong>Maximilian Schwarzmüller</strong> on Udemy.</div>
                 </Col>
 
             </Row>

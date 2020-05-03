@@ -10,7 +10,8 @@
     display: block;
 }
 
-.FooterItem li a {
+.FooterItem li a,
+.FooterItem a {
     color: #666666;
     text-decoration: none;
 }
