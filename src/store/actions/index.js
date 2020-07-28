@@ -1,3 +1,3 @@
 export { addIngredient, reduceIngredient } from './burgerBuilder';
-export { modifyInputBooking } from './BookingForm';
+export { modifyInputBooking } from './bookingForm';
 export { modifyInputDish } from './DishForm';
